@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: micronaut
+  server:
+    port: 8080
+
+message:
+  server: "http://localhost:8080"
+
+tracing:
+  jaeger:
+    enabled: true
+
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        step: PT1M
+        descriptions: true
+  prometheus:
+    enabled: true
+    sensitive: false

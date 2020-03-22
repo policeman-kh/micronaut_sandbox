@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: sandbox
+---
+testFramework: junit
+sourceLanguage: java
